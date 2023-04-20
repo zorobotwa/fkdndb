@@ -16,7 +16,7 @@ const Levels = require("discord-xp");
 const { Sticker, createSticker, StickerTypes } = require("wa-sticker-formatter");
 //---------------------------------------------------------------------------
 cmd({
-            pattern: "انضم",
+            pattern: "join",
             desc: "joins group by link",
             category: "owner",
             use: '<group link.>',
@@ -35,23 +35,23 @@ cmd({
     )
     //---------------------------------------------------------------------------
 cmd({
-            pattern: "ملصق",
+            pattern: "sticker",
             alias: ["s"],
             desc: "Makes sticker of replied image/video.",
             category: "group",
             use: '<reply to any image/video.>',
         },
         async(Void, citel, text) => {
-            if (!citel.quoted) return citel.reply(`*منشن صوره او فيديو.*`);
+            if (!citel.quoted) return citel.reply(`*Mention any Image or video Sir.*`);
             let mime = citel.quoted.mtype
             pack = Config.packname
             author = Config.author
             if (citel.quoted) {
                 let media = await citel.quoted.download();
-                citel.reply("*جاري صناعة الملصق*");
+                citel.reply("*Processing Your request*");
                 let sticker = new Sticker(media, {
                     pack: pack, // The pack name
-                    author: 𝚁𝙰𝙸𝚉𝙴𝙻 𝙶𝙴𝙾𝚁𝙹𝙴༗, // The author name
+                    author: author, // The author name
                     type: text.includes("--crop" || '-c') ? StickerTypes.CROPPED : StickerTypes.FULL,
                     categories: ["🤩", "🎉"], // The sticker category
                     id: "12345", // The sticker id
@@ -88,10 +88,10 @@ cmd({
         filename: __filename,
     },
     async(Void, citel, text) => {
-        citel.reply(`* ارسلتلك للخاص ❀╎ ${tlang().greet}*`);
+        citel.reply(`*Check your Pm ${tlang().greet}*`);
         await Void.sendMessage(`${citel.sender}`, {
             image: log0,
-            caption: `*قروب دعم بوت رايزل*\n* الرابط❀╎:* https://chat.whatsapp.com/EZe0MlgU0xo8GXtkCpqS0M`,
+            caption: `*Group Name: Secktor-Support*\n*Group Link:* https://chat.whatsapp.com/Bl2F9UTVU4CBfZU6eVnrbC`,
         });
 
     }
@@ -99,7 +99,7 @@ cmd({
 
 //---------------------------------------------------------------------------
 cmd({
-            pattern: "انذار",
+            pattern: "warn",
             desc: "Warns user in Group.",
             category: "group",
             filename: __filename,
@@ -154,7 +154,7 @@ cmd({
 
     //---------------------------------------------------------------------------
 cmd({
-        pattern: "منشن",
+        pattern: "tagall",
         desc: "Tags every person of group.",
         category: "group",
         filename: __filename,
@@ -168,13 +168,13 @@ cmd({
         if (!isAdmins) return citel.reply(tlang().admin);
 
         let textt = `
-*｢✪منشن جماعي✪｣*
+══✪〘   *Tag All*   〙✪══
 
-✪ *الرساله :* ${text ? text : "السلام عليكم"}\n
-✪ *الطالب:* ${citel.pushName} 🔖
+➲ *Message :* ${text ? text : "blank"}\n\n
+➲ *Author:* ${citel.pushName} 🔖
 `
         for (let mem of participants) {
-            textt += `🐥 @${mem.id.split("@")[0]}\n`;
+            textt += `📍 @${mem.id.split("@")[0]}\n`;
         }
         Void.sendMessage(citel.chat, {
             text: textt,
@@ -367,12 +367,28 @@ cmd({
 *📥 Total Messages* ${ttms}
 *Powered by ${tlang().title}*
 `;
+            const buttonsd = [{
+                    buttonId: `${prefix}rank`,
+                    buttonText: {
+                        displayText: "Rank",
+                    },
+                    type: 1,
+                },
+                {
+                    buttonId: `${prefix}help`,
+                    buttonText: {
+                        displayText: " Help",
+                    },
+                    type: 1,
+                },
+            ];
             let buttonMessage = {
                 image: {
                     url: pfp,
                 },
                 caption: profile,
                 footer: tlang().footer,
+                buttons: buttonsd,
                 headerType: 4,
             };
             Void.sendMessage(citel.chat, buttonMessage, {
@@ -538,7 +554,7 @@ cmd({
     )
     //---------------------------------------------------------------------------
 cmd({
-            pattern: "ترقيه",
+            pattern: "promote",
             desc: "Provides admin role to replied/quoted user",
             category: "group",
             filename: __filename,
@@ -565,7 +581,7 @@ cmd({
     )
     //---------------------------------------------------------------------------
 cmd({
-            pattern: "طرد",
+            pattern: "kick",
             desc: "Kicks replied/quoted user from group.",
             category: "group",
             filename: __filename,
@@ -611,7 +627,7 @@ cmd({
     )
     //---------------------------------------------------------------------------
 cmd({
-            pattern: "قروب",
+            pattern: "group",
             desc: "mute and unmute group.",
             category: "group",
             filename: __filename,
@@ -634,8 +650,22 @@ cmd({
                     .then((res) => reply(`Group Chat Unmuted :)`))
                     .catch((err) => console.log(err));
             } else {
-
-                return citel.reply(`Group Mode:\n${prefix}group open- to open\n${prefix}group close- to close`);
+                let buttons = [{
+                        buttonId: `${prefix}group open`,
+                        buttonText: {
+                            displayText: "📍Unmute",
+                        },
+                        type: 1,
+                    },
+                    {
+                        buttonId: `${prefix}group close`,
+                        buttonText: {
+                            displayText: "📍Mute",
+                        },
+                        type: 1,
+                    },
+                ];
+                await Void.sendButtonText(citel.chat, buttons, `Group Mode`, Void.user.name, citel);
             }
         }
     )
@@ -672,7 +702,7 @@ cmd({
     )
     //---------------------------------------------------------------------------
 cmd({
-            pattern: "مخفي",
+            pattern: "hidetag",
             alias: ["htag"],
             desc: "Tags everyperson of group without mentioning their numbers",
             category: "group",
@@ -698,7 +728,7 @@ cmd({
     )
     //---------------------------------------------------------------------------
 cmd({
-            pattern: "اضافه",
+            pattern: "add",
             desc: "Add that person in group",
             fromMe: true,
             category: "group",
@@ -750,7 +780,7 @@ cmd({
     )
     //---------------------------------------------------------------------------
 cmd({
-        pattern: "تنزيل",
+        pattern: "demote",
         desc: "Demotes replied/quoted user from group",
         category: "group",
         filename: __filename,
@@ -778,7 +808,7 @@ cmd({
 
 //---------------------------------------------------------------------------
 cmd({
-            pattern: "حذف",
+            pattern: "del",
             alias: ["delete"],
             desc: "Deletes message of any user",
             category: "group",
@@ -802,8 +832,8 @@ cmd({
                 const botNumber = await Void.decodeJid(Void.user.id)
                 const isBotAdmins = citel.isGroup ? groupAdmins.includes(botNumber) : false;
                 const isAdmins = citel.isGroup ? groupAdmins.includes(citel.sender) : false;
-                if (!isAdmins) return citel.reply('المشرفين فقط يحذفون رسائل الاخرين.')
-                if (!isBotAdmins) return citel.reply('لا يمكنني حذف رسالة أي شخص بدون الحصول على اشراف.')
+                if (!isAdmins) return citel.reply('Only Admins are allowed to delete other persons message.')
+                if (!isBotAdmins) return citel.reply('I can\'t delete anyones message without getting Admin Role.')
                 if (!citel.quoted) return citel.reply(`Please reply to any message. ${tlang().greet}`);
                 let { chat, fromMe, id } = citel.quoted;
                 const key = {
@@ -862,7 +892,7 @@ cmd({
     )
     //---------------------------------------------------------------------------
 cmd({
-        pattern: "شير",
+        pattern: "broadcast",
         alias: ["bc"],
         desc: "Bot makes a broadcast in all groups",
         fromMe: true,
