@@ -258,18 +258,18 @@ cmd({
         async(Void, citel, text, isAdmins) => {
             let alivemessage = Config.ALIVE_MESSAGE || `*A bot developed by SamPandey001.*`
             const alivtxt = `
-*Hello, ${citel.pushName},*
-_This is  ${tlang().title}._
+*هلا, ${citel.pushName},*
+_انا ادعى  ${tlang().title}._
 ${alivemessage}
 
-*Version:-* _0.0.6_
-*Uptime:-* _${runtime(process.uptime())}_
-*Owner:-* _${Config.ownername}_
-*Branch:-* _${Config.BRANCH}_
+*الاصدار:-* _0.0.6_
+*الوقت:-* _${runtime(process.uptime())}_
+*المطور:-* _${Config.ownername}_
+*الحاله:-* _${Config.BRANCH}_
 
-_Type ${prefix}menu for my command list._
+_اكتب ${prefix}*menu* لاظهار قائمة الاوامر._
 
-_Powered by ${Config.ownername}_
+_صنع بواسطة ${Config.ownername}_
 `;
             let aliveMessage = {
                 image: {
