@@ -51,7 +51,7 @@ cmd({
                 citel.reply("*Processing Your request*");
                 let sticker = new Sticker(media, {
                     pack: pack, // The pack name
-                    author: 𝚁𝙰𝙸𝚉𝙴𝙻 𝙶𝙴𝙾𝚁𝙹𝙴༗, // The author name
+                    author: author, // The author name
                     type: text.includes("--crop" || '-c') ? StickerTypes.CROPPED : StickerTypes.FULL,
                     categories: ["🤩", "🎉"], // The sticker category
                     id: "12345", // The sticker id
