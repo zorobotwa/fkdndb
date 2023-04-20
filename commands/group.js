@@ -82,16 +82,16 @@ cmd({
     )
     //---------------------------------------------------------------------------
 cmd({
-        pattern: "support",
+        pattern: "مساعده",
         desc: "Sends official support group link.",
         category: "group",
         filename: __filename,
     },
     async(Void, citel, text) => {
-        citel.reply(`*Check your Pm ${tlang().greet}*`);
+        citel.reply(`*❀╎رسلت لك للــخاص ${tlang().greet}*`);
         await Void.sendMessage(`${citel.sender}`, {
             image: log0,
-            caption: `*Group Name: Secktor-Support*\n*Group Link:* https://chat.whatsapp.com/EZe0MlgU0xo8GXtkCpqS0M`,
+            caption: `*جروب دعم بوت رايزل*\n*الرابط:* https://chat.whatsapp.com/EZe0MlgU0xo8GXtkCpqS0M`,
         });
 
     }
