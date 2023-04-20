@@ -2,7 +2,7 @@
   "name": "RAIZEL-Md By RAIZEL GEORJE",
   "description": "A Whatsapp md bot built in NodeJs to make experience better\n\t if Any Problem : https://chat.whatsapp.com/EZe0MlgU0xo8GXtkCpqS0M",
   "logo": "https://i.imgur.com/PF20hsK.jpg",
-  "keywords": ["nodejs", "bot", "whatsapp bot", "RAIZEL", "SecktorBot", "Secktor","SecktorMD","theme bot","multi device"],
+  "keywords": ["nodejs", "bot", "whatsapp bot", "ZERO-TWO", "SecktorBot", "Secktor","SecktorMD","theme bot","multi device"],
   "success_url": "/",
   "stack": "container",
 "env": {
