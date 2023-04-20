@@ -221,7 +221,7 @@ ${
   }
 );
 
-cmd({ pattern: "ship" , category: "fun" }, async(Void, citel, text) => {
+cmd({ pattern: "شبيهي" , category: "fun" }, async(Void, citel, text) => {
     const { tlang } = require('../lib')
    if (!citel.isGroup) return citel.reply(tlang().group);
    const groupMetadata = citel.isGroup ? await Void.groupMetadata(citel.chat).catch((e) => {}) : "";
@@ -231,15 +231,15 @@ cmd({ pattern: "ship" , category: "fun" }, async(Void, citel, text) => {
     async function couple(percent) {
          var text;
         if (percent < 25) {
-            text = `\t\t\t\t\t*ShipCent : ${percentage}%* \n\t\tما تصلحون لبعض للأسف`
+            text = `\t\t\t\t\t*النسبه : ${percentage}%* \n\t\tما تصلحون لبعض للأسف`
         } else if (percent < 50) {
-            text = `\t\t\t\t\t*ShipCent : ${percentage}%* \n\t\t اختيار موفق! 💫`
+            text = `\t\t\t\t\t*النسبه : ${percentage}%* \n\t\t اختيار موفق! 💫`
         } else if (percent < 75) {
-            text = `\t\t\t\t\t*ShipCent : ${percentage}%* \n\t\t\tوشرايكم تصبحون اصدقاء ⭐️`
+            text = `\t\t\t\t\t*النسبه : ${percentage}%* \n\t\t\tوشرايكم تصبحون اصدقاء ⭐️`
         } else if (percent < 90) {
-            text = `\t\t\t\t\t*ShipCent : ${percentage}%* \n\tمدهش,انتما الاثنين ستكونا زوجان رائعان 💖 `
+            text = `\t\t\t\t\t*النسبه : ${percentage}%* \n\tمدهش,انتما الاثنين ستكونا زوجان رائعان 💖 `
         } else {
-            text = `\t\t\t\t\t*ShipCent : ${percentage}%* \n\tولدتو لبعض انتو 💙`
+            text = `\t\t\t\t\t*النسبه : ${percentage}%* \n\tولدتو لبعض انتو 💙`
         }
         return text
         }
