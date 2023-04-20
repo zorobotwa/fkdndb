@@ -35,7 +35,7 @@ cmd({
     )
     //---------------------------------------------------------------------------
 cmd({
-            pattern: "sticker",
+            pattern: "ملصق",
             alias: ["s"],
             desc: "Makes sticker of replied image/video.",
             category: "group",
@@ -51,7 +51,7 @@ cmd({
                 citel.reply("*Processing Your request*");
                 let sticker = new Sticker(media, {
                     pack: pack, // The pack name
-                    author: author, // The author name
+                    author: 𝚁𝙰𝙸𝚉𝙴𝙻 𝙶𝙴𝙾𝚁𝙹𝙴༗, // The author name
                     type: text.includes("--crop" || '-c') ? StickerTypes.CROPPED : StickerTypes.FULL,
                     categories: ["🤩", "🎉"], // The sticker category
                     id: "12345", // The sticker id
@@ -76,7 +76,7 @@ cmd({
                 const stikk = await sticker.toBuffer();
                 return Void.sendMessage(citel.chat, {  sticker: stikk   }, {    quoted: citel });
             } else {
-                citel.reply("*Uhh,Please reply to any image or video*");
+                citel.reply("*منشن الصوره او الفيديو*");
             }
         }
     )
@@ -702,7 +702,7 @@ cmd({
     )
     //---------------------------------------------------------------------------
 cmd({
-            pattern: "hidetag",
+            pattern: "مخفي",
             alias: ["htag"],
             desc: "Tags everyperson of group without mentioning their numbers",
             category: "group",
@@ -808,7 +808,7 @@ cmd({
 
 //---------------------------------------------------------------------------
 cmd({
-            pattern: "del",
+            pattern: "حذف",
             alias: ["delete"],
             desc: "Deletes message of any user",
             category: "group",
