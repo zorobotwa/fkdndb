@@ -377,7 +377,7 @@ cmd({
                 {
                     buttonId: `${prefix}help`,
                     buttonText: {
-                        displayText: " اوامر",
+                        displayText: "اوامر",
                     },
                     type: 1,
                 },
