@@ -286,7 +286,7 @@ cmd({
     )
     //---------------------------------------------------------------------------
 cmd({
-            pattern: "profile",
+            pattern: "بروفايل",
             desc: "Shows profile of user.",
             category: "group",
             filename: __filename,
@@ -297,19 +297,19 @@ cmd({
             let meh = citel.sender;
             const userq = await Levels.fetch(citel.sender, "RandomXP");
             const lvpoints = userq.level;
-            var role = "GOD✨";
+            var role = "ملك✨";
             if (lvpoints <= 2) {
                 var role = "🏳Citizen";
             } else if (lvpoints <= 4) {
-                var role = "👼Baby Wizard";
+                var role = "👼طفل";
             } else if (lvpoints <= 6) {
-                var role = "🧙‍♀️Wizard";
+                var role = "🧙‍♀️ساحر";
             } else if (lvpoints <= 8) {
-                var role = "🧙‍♂️Wizard Lord";
+                var role = "🧙‍♂️كبير السحره";
             } else if (lvpoints <= 10) {
-                var role = "🧚🏻Baby Mage";
+                var role = "🧚🏻كاهن";
             } else if (lvpoints <= 12) {
-                var role = "🧜Mage";
+                var role = "🧜عظيم";
             } else if (lvpoints <= 14) {
                 var role = "🧜‍♂️Master of Mage";
             } else if (lvpoints <= 16) {
@@ -358,26 +358,26 @@ cmd({
                 pfp = await botpic();
             }
             const profile = `
-*Hii ${citel.pushName},*
-*Here is your profile information*
-*👤Username:* ${citel.pushName}
-*⚡Bio:* ${bioo}
-*🧩Role:* ${role}
-*🍁Level:* ${userq.level}
-*📥 Total Messages* ${ttms}
-*Powered by ${tlang().title}*
+*هلا ${citel.pushName},*
+*صفحــــة بروفـــايلك*
+*👤الأسم:* ${citel.pushName}
+*⚡البايو:* ${bioo}
+*🧩رولي:* ${role}
+*🍁المرحله:* ${userq.level}
+*📥 عدد الرسائل* ${ttms}
+*صنع بواسطه ${tlang().title}*
 `;
             const buttonsd = [{
                     buttonId: `${prefix}rank`,
                     buttonText: {
-                        displayText: "Rank",
+                        displayText: "رانك",
                     },
                     type: 1,
                 },
                 {
                     buttonId: `${prefix}help`,
                     buttonText: {
-                        displayText: " Help",
+                        displayText: " اوامر",
                     },
                     type: 1,
                 },
@@ -399,7 +399,7 @@ cmd({
     )
     //---------------------------------------------------------------------------
 cmd({
-            pattern: "rank",
+            pattern: "رانك",
             desc: "Sends rank card of user.",
             category: "group",
             filename: __filename,
