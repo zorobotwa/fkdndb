@@ -116,7 +116,7 @@ cmd({
     )
     //---------------------------------------------------------------------------
 cmd({
-            pattern: "فكلوك",
+            pattern: "unblock",
             desc: "Unblocked to the quoted user.",
             category: "owner",
             filename: __filename,
@@ -892,7 +892,7 @@ cmd({
     )
     //---------------------------------------------------------------------------
 cmd({
-        pattern: "شير",
+        pattern: "brodcast",
         alias: ["bc"],
         desc: "Bot makes a broadcast in all groups",
         fromMe: true,
