@@ -1007,13 +1007,13 @@ cmd({ on: "text" }, async(Void, citel) => {
                 },
                 caption: `
 ╔════◇
-║ *Wow,Someone just*
-║ *leveled Up huh⭐*
-║ *👤Name*: ${citel.pushName}
-║ *🎐Level*: ${sck1.level}🍭
-║ *🛑Exp*: ${sck1.xp} / ${Levels.xpFor(sck1.level + 1)}
-║ *📍Role*: *${role}*
-║ *Enjoy🥳*
+║ *واو لقد ارتفع مستواك*
+║ *ارتفاع ملحوظ ههه⭐*
+║ *👤الأسم*: ${citel.pushName}
+║ *🎐المستوى*: ${sck1.level}🍭
+║ *🛑يكسب*: ${sck1.xp} / ${Levels.xpFor(sck1.level + 1)}
+║ *📍رولي*: *${role}*
+║ *تنتع🥳*
 ╚════════════╝
 `,
             }, {
