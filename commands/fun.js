@@ -1,5 +1,5 @@
 
- const { dare, truth, kt, hal, wdefa } = require('../lib/truth-dare.js')
+ const { dare, truth, kt, hal } = require('../lib/truth-dare.js')
  const axios = require('axios')
  const { cmd } = require('../lib')
      //---------------------------------------------------------------------------
@@ -40,17 +40,6 @@ async(Void, citel, text) => {
          },
          async(Void, citel, text) => {
              return await citel.reply(`${dare()}`);
-         }
-     )
-     //---------------------------------------------------------------------------
- 
-     //---------------------------------------------------------------------------
- cmd({
-             pattern: "وظيفتي",
-             filename: __filename,
-         },
-         async(Void, citel, text) => {
-             return await citel.reply(`${wdefa()}`);
          }
      )
      //---------------------------------------------------------------------------
