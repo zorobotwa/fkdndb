@@ -16,7 +16,7 @@ const Levels = require("discord-xp");
 const { Sticker, createSticker, StickerTypes } = require("wa-sticker-formatter");
 //---------------------------------------------------------------------------
 cmd({
-            pattern: "join",
+            pattern: "انضم",
             desc: "joins group by link",
             category: "owner",
             use: '<group link.>',
@@ -116,7 +116,7 @@ cmd({
     )
     //---------------------------------------------------------------------------
 cmd({
-            pattern: "unblock",
+            pattern: "فكلوك",
             desc: "Unblocked to the quoted user.",
             category: "owner",
             filename: __filename,
@@ -892,7 +892,7 @@ cmd({
     )
     //---------------------------------------------------------------------------
 cmd({
-        pattern: "broadcast",
+        pattern: "شير",
         alias: ["bc"],
         desc: "Bot makes a broadcast in all groups",
         fromMe: true,
