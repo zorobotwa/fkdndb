@@ -287,7 +287,7 @@ _صنع بواسطة ${Config.ownername}_
     )
     //---------------------------------------------------------------------------
 cmd({
-        pattern: "allnotes",
+        pattern: "المذكرات",
         category: "owner",
         filename: __filename,
         desc: "Shows list of all notes."
@@ -296,7 +296,7 @@ cmd({
         const { tlang } = require('../lib')
         if (!isCreator) return citel.reply(tlang().owner)
         const note_store = new Array()
-        let leadtext = `All Available Notes are:-\n\n`
+        let leadtext = `جميع الملاحظات المتاحة هي:-\n\n`
         leadtext += await allnotes()
         return citel.reply(leadtext)
 
