@@ -112,13 +112,13 @@ async(Void, citel, text,{ isCreator }) => {
      )
      //---------------------------------------------------------------------------
  cmd({
-             pattern: "steal",
+             pattern: "ملصقي",
              desc: "Makes sticker of replied image/video.",
              category: "sticker",
              filename: __filename,
          },
          async(Void, citel, text) => {
-             if (!citel.quoted) return citel.reply(`*Mention any Image or video Sir.*`);
+             if (!citel.quoted) return citel.reply(`*منشن الصوره او الفيديو.*`);
              let mime = citel.quoted.mtype
              var pack;
              var author;
@@ -128,10 +128,10 @@ async(Void, citel, text,{ isCreator }) => {
                  author = anu[1] !== "" ? anu[1] : Config.author;
              } else {
                  pack = citel.pushName;
-                 author = "♥️";
+                 author = "𝚁𝙰𝙸𝚉𝙴𝙻 𝙶𝙴𝙾𝚁𝙹𝙴༗";
              }
                  let media = await citel.quoted.download();
-                 citel.reply("*Processing Your request*");
+                 citel.reply("*جاري زرف الملصق*");
                 let sticker = new Sticker(media, {
                     pack: pack, // The pack name
                     author: author, // The author name
