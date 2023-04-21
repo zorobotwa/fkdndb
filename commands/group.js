@@ -752,7 +752,7 @@ cmd({
     )
     //---------------------------------------------------------------------------
 cmd({
-            pattern: "getjids",
+            pattern: "القروبات",
             desc: "Sends chat id of every groups.",
             category: "group",
             filename: __filename,
@@ -765,13 +765,13 @@ cmd({
                 .map((entry) => entry[1]);
             let anu = groups.map((v) => v.id);
             let jackhuh = `All groups jid\n\n`
-            citel.reply(`Fetching jid from ${anu.length} Groups`)
+            citel.reply(`البوت في ${anu.length} قروب`)
             for (let i of anu) {
                 let metadata = await Void.groupMetadata(i);
                 await sleep(500)
-                jackhuh += `*Subject:-* ${metadata.subject}\n`
-                jackhuh += `*Member :* ${metadata.participants.length}\n`
-                jackhuh += `*Jid:-* ${i}\n\n`
+                jackhuh += `*الأسم:-* ${metadata.subject}\n`
+                jackhuh += `*الاعضاء :* ${metadata.participants.length}\n`
+                jackhuh += `*ايبي:-* ${i}\n\n`
 
             }
             citel.reply(jackhuh)
