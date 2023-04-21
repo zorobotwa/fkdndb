@@ -3,9 +3,9 @@
  Licensed under the  GPL-3.0 License;
  You may not use this file except in compliance with the License.
  It is supplied in the hope that it may be useful.
- * @project_name : Secktor-Md
- * @author : SamPandey001 <https://github.com/SamPandey001>
- * @description : Secktor,A Multi-functional whatsapp bot.
+ * @project_name : Secktor-Md By Suhail Tech
+ * @author : SuhailTech <https://www.youtube.com/c/SuhailTechInfo>
+ * @description : Secktor Bot ,A Multi-functional whatsapp bot.
  * @version 0.0.6
  **/
 
@@ -23,7 +23,7 @@ Secktor.cmd({
             alias: ["menu"],
             desc: "Help list",
             category: "general",
-            react: "✨",
+            react: "👀",
             filename: __filename
         },
         async(Void, citel, text) => {
@@ -50,66 +50,43 @@ Secktor.cmd({
                     .format('HH:mm:ss')
                 moment.tz.setDefault('Asia/KOLKATA')
                     .locale('id')
-                const date = moment.tz('Asia/Kolkata').format('DD/MM/YYYY')
+                const date = moment.tz('asia/karachi').format('DD/MM/YYYY')
                 let total = await sck1.countDocuments()
-                let str = `*⺀اوامر بوت رايزل⺀*
-❀╎.بروفايلي
-*┇↜⟬ يجيبلك تفاصيلك ⟭*
-❀╎.منشن
-*┇↜⟬ لعمل منشن جماعي ⟭*
-❀╎.مخفي
-*┇↜⟬ لعمل منشن مخفي ⟭*
-❀╎.ترقيه
-*┇↜⟬ لترقية عضو عادي ⟭*
-❀╎.تنزيل
-*┇↜⟬ لتنزيل من منصب مشرف ⟭*
-❀╎.حذف
-*┇↜⟬ يحذف البوت الرسائل ⟭*
-❀╎.ملصق
-*┇↜⟬ لعمل ملصق ⟭*
-❀╎.ملصقي
-*┇↜⟬ لصناعة ملصق بحقوقك ⟭*
-❀╎.انذار
-*┇↜⟬ يوزع انذارات ⟭*
-❀╎.مساعده
-*┇↜⟬ يرسلك الدعم بالخاص ⟭*
-❀╎.دمج
-*┇↜⟬ لدمج اثنين ايموجي ⟭*
-❀╎.الوقت
-*┇↜⟬ لمعرفة وقت البوت ⟭*
-❀╎.الروابط
-*┇↜⟬ لطرد اللي يرسلو روابط ⟭*
-✯───｢الدعم｣────✯
-｢  https://chat.whatsapp.com/EZe0MlgU0xo8GXtkCpqS0M  ｣
-✯──｢منوعات｣───✯
-❀╎.تطقيم
-*┇↜⟬ يجلبلك تطقيمات ⟭*
-❀╎.القروبات
-*┇↜⟬ يجيب القروبات للمالك ⟭*
-❀╎.الترحيب
-*┇↜⟬ لتشغيل الترحيب ⟭*
-❀╎.التوديع
-*┇↜⟬ اتشغيل التوديع ⟭*
-✯──｢التسليه｣───✯
-❀╎.اكس
-*┇↜⟬ للعب اكس او ⟭*
-❀╎.وظيفتي
-*┇↜⟬ يجيبلك البوت وظيفه ⟭*
-❀╎.شبيهي
-*┇↜⟬ يجيبلك شبيهك ⟭*
-❀╎.س
-*┇↜⟬ يعطيك سؤال ⟭*
-❀╎.هل
-*┇↜⟬ تسأل البوت ⟭*
-❀╎.كت
-*┇↜⟬ للفعاليات⟭*
+                let str = `╭────《 ` + fancytext('SUHAIL-MD', 58) + ` 》─────⊷\n`
+                str +=
+                    '' + `│ ╭───────✧❁✧───────«
+│ │ Theme:- ${tlang().title}
+│ │ Owner:- ${Config.ownername}
+│ │ Plugins:- ${commands.length}
+│ │ Uptime:- ${runtime(process.uptime())}
+│ │ Mem:- ${formatp(os.totalmem() - os.freemem())}/${formatp(os.totalmem())}
+│ │ Time:- ${time}
+│ │ Date:- ${date}
+│ │ youtube.com/c/SuhailTechInfo
+│ ╰───────✧❁✧───────»
+╰───────────────⊷\n
+` + ''
+                str += `╭───『 ` + fancytext('Commands', 57) + `』──◆`
+                for (const category in cmds) {
+                    str += `
+┃  ╭───────✧❁✧───────«
+┃  │ ✯---- ${tiny(category)} ----⦿
+┃  ╰┬──────✧❁✧───────»
+┃  ┌┤\n`
+                    for (const plugins of cmds[category]) {
+                        str += `┃  │ ✭ ${plugins}\n`
+                    }
+                    str += `┃  ╰─────────────◆`
+                }
 
-`
+                str += `\n╰━━━━━━━━━━━──⊷\nsᴜʜᴀɪʟ ᴛᴇᴄʜ ɪɴғᴏ \n www.youtube.com/c/SuhailTechInfo`
+
                 let buttonMessaged = {
                     image: { url: await botpic() },
                     caption: str,
-                    footer: tlang().title,
-                    headerType: 4
+                    footer: tlang().footer,
+                    headerType: 4,
+                   
                 };
                 return await Void.sendMessage(citel.chat, buttonMessaged);
             }
@@ -117,67 +94,35 @@ Secktor.cmd({
     )
     //---------------------------------------------------------------------------
 Secktor.cmd({
-            pattern: "اوامر",
+            pattern: "list",
             desc: "list menu",
             category: "general",
-            react: "✅"
+            react: "🥀"
         },
         async(Void, citel) => {
             const { commands } = require('../lib');
-            let str = `*⺀اوامر بوت رايزل⺀*
-❀╎.بروفايلي
-*┇↜⟬ يجيبلك تفاصيلك ⟭*
-❀╎.منشن
-*┇↜⟬ لعمل منشن جماعي ⟭*
-❀╎.مخفي
-*┇↜⟬ لعمل منشن مخفي ⟭*
-❀╎.ترقيه
-*┇↜⟬ لترقية عضو عادي ⟭*
-❀╎.تنزيل
-*┇↜⟬ لتنزيل من منصب مشرف ⟭*
-❀╎.حذف
-*┇↜⟬ يحذف البوت الرسائل ⟭*
-❀╎.ملصق
-*┇↜⟬ لعمل ملصق ⟭*
-❀╎.ملصقي
-*┇↜⟬ لصناعة ملصق بحقوقك ⟭*
-❀╎.انذار
-*┇↜⟬ يوزع انذارات ⟭*
-❀╎.مساعده
-*┇↜⟬ يرسلك الدعم بالخاص ⟭*
-❀╎.دمج
-*┇↜⟬ لدمج اثنين ايموجي ⟭*
-❀╎.الوقت
-*┇↜⟬ لمعرفة وقت البوت ⟭*
-❀╎.الروابط
-*┇↜⟬ لطرد اللي يرسلو روابط ⟭*
-✯───｢الدعم｣────✯
-｢  https://chat.whatsapp.com/EZe0MlgU0xo8GXtkCpqS0M  ｣
-✯──｢منوعات｣───✯
-❀╎.تطقيم
-*┇↜⟬ يجلبلك تطقيمات ⟭*
-❀╎.القروبات
-*┇↜⟬ يجيب القروبات للمالك ⟭*
-❀╎.الترحيب
-*┇↜⟬ لتشغيل الترحيب ⟭*
-❀╎.التوديع
-*┇↜⟬ اتشغيل التوديع ⟭*
-✯──｢التسليه｣───✯
-❀╎.اكس
-*┇↜⟬ للعب اكس او ⟭*
-❀╎.وظيفتي
-*┇↜⟬ يجيبلك البوت وظيفه ⟭*
-❀╎.شبيهي
-*┇↜⟬ يجيبلك شبيهك ⟭*
-❀╎.س
-*┇↜⟬ يعطيك سؤال ⟭*
-❀╎.هل
-*┇↜⟬ تسأل البوت ⟭*
-❀╎.كت
-*┇↜⟬ للفعاليات⟭*
-*⺀بوت رايزل جورج⺀*
-`
-            return Void.sendMessage(citel.chat, { image: { url: THUMB_IMAGE }, caption: str })
+            let str = `
+╭━━〘 ` +fancytext('SUHAIL-MD', 58)+ ` 〙━━──⊷`
+            str += '' + `
+┃ ⛥╭──────────────      
+┃ ⛥│ Theme: ${tlang().title}
+┃ ⛥│ Prefix: ${prefix}
+┃ ⛥│ Owner: ${Config.ownername}
+┃ ⛥│ Commands: ${commands.length}
+┃ ⛥│ Uptime: ${runtime(process.uptime())}
+┃ ⛥│ Mem: ${formatp(os.totalmem() - os.freemem())}/${formatp(os.totalmem())}
+┃ ⛥│ Ytube : youtube.com/c/SuhailTechInfo
+┃ ⛥╰───────────
+╰━━━━━━━━━━━──⊷\n` + ''
+            str += `╭━━━━━━━━━━━────⊷\n`
+            str += `┃ ⛥ ╭─────────────\n`
+            for (let i = 0; i < commands.length; i++) {
+             if(commands[i].pattern==undefined) continue
+                str += `┃ ⛥ │ ➛ ${i+1 } ` +commands[i].pattern + '\n'
+            }
+            str += `┃ ⛥ ╰─────────────\n`
+            str += `╰━━━━━━━━━━━───⊷\nsᴜʜᴀɪʟ ᴛᴇᴄʜ ɪɴғᴏ \n www.youtube.com/c/SuhailTechInfo`
+            return Void.sendMessage(citel.chat, { image: { url: THUMB_IMAGE }, caption: str ,footer: tlang().footer, headerType: 4 })
         }
     )
     //---------------------------------------------------------------------------
@@ -219,7 +164,7 @@ Secktor.cmd({
 )
 
 Secktor.cmd({
-    pattern: "الاوامر",
+    pattern: "file",
     desc: "to get extact name where that command is in repo.\nSo user can edit that.",
     category: "general",
     react: "✨",
@@ -229,58 +174,7 @@ async(Void, citel, text) => {
  const { commands } = require('../lib');
  let arr = [];
         const cmd = commands.find((cmd) => cmd.pattern === (text.split(" ")[0].toLowerCase()))
-        if (!cmd) return await citel.reply("*⺀اوامر بوت رايزل⺀*
-❀╎.بروفايلي
-*┇↜⟬ يجيبلك تفاصيلك ⟭*
-❀╎.منشن
-*┇↜⟬ لعمل منشن جماعي ⟭*
-❀╎.مخفي
-*┇↜⟬ لعمل منشن مخفي ⟭*
-❀╎.ترقيه
-*┇↜⟬ لترقية عضو عادي ⟭*
-❀╎.تنزيل
-*┇↜⟬ لتنزيل من منصب مشرف ⟭*
-❀╎.حذف
-*┇↜⟬ يحذف البوت الرسائل ⟭*
-❀╎.ملصق
-*┇↜⟬ لعمل ملصق ⟭*
-❀╎.ملصقي
-*┇↜⟬ لصناعة ملصق بحقوقك ⟭*
-❀╎.انذار
-*┇↜⟬ يوزع انذارات ⟭*
-❀╎.مساعده
-*┇↜⟬ يرسلك الدعم بالخاص ⟭*
-❀╎.دمج
-*┇↜⟬ لدمج اثنين ايموجي ⟭*
-❀╎.الوقت
-*┇↜⟬ لمعرفة وقت البوت ⟭*
-❀╎.الروابط
-*┇↜⟬ لطرد اللي يرسلو روابط ⟭*
-✯───｢الدعم｣────✯
-｢  https://chat.whatsapp.com/EZe0MlgU0xo8GXtkCpqS0M  ｣
-✯──｢منوعات｣───✯
-❀╎.تطقيم
-*┇↜⟬ يجلبلك تطقيمات ⟭*
-❀╎.القروبات
-*┇↜⟬ يجيب القروبات للمالك ⟭*
-❀╎.الترحيب
-*┇↜⟬ لتشغيل الترحيب ⟭*
-❀╎.التوديع
-*┇↜⟬ اتشغيل التوديع ⟭*
-✯──｢التسليه｣───✯
-❀╎.اكس
-*┇↜⟬ للعب اكس او ⟭*
-❀╎.وظيفتي
-*┇↜⟬ يجيبلك البوت وظيفه ⟭*
-❀╎.شبيهي
-*┇↜⟬ يجيبلك شبيهك ⟭*
-❀╎.س
-*┇↜⟬ يعطيك سؤال ⟭*
-❀╎.هل
-*┇↜⟬ تسأل البوت ⟭*
-❀╎.كت
-*┇↜⟬ للفعاليات⟭*
-");
+        if (!cmd) return await citel.reply("*❌No Such commands.*");
         else arr.push(`*🍁Command:* ${cmd.pattern}`);
         if (cmd.category) arr.push(`*🧩Type:* ${cmd.category}`);
         if(cmd.filename) arr.push(`✨FileName: ${cmd.filename}`)
