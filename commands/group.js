@@ -42,7 +42,7 @@ cmd({
             use: '<reply to any image/video.>',
         },
         async(Void, citel, text) => {
-            if (!citel.quoted) return citel.reply(`*Mention any Image or video Sir.*`);
+            if (!citel.quoted) return citel.reply(`*منشن صوره او فيديو.*`);
             let mime = citel.quoted.mtype
             pack = Config.packname
             author = Config.author
@@ -99,7 +99,7 @@ cmd({
 
 //---------------------------------------------------------------------------
 cmd({
-            pattern: "warn",
+            pattern: "انذار",
             desc: "Warns user in Group.",
             category: "group",
             filename: __filename,
@@ -154,7 +154,7 @@ cmd({
 
     //---------------------------------------------------------------------------
 cmd({
-        pattern: "tagall",
+        pattern: "منشن",
         desc: "Tags every person of group.",
         category: "group",
         filename: __filename,
@@ -168,10 +168,10 @@ cmd({
         if (!isAdmins) return citel.reply(tlang().admin);
 
         let textt = `
-══✪〘   *Tag All*   〙✪══
+══✪*｢✪منشن جماعي✪｣*✪══
 
-➲ *Message :* ${text ? text : "blank"}\n\n
-➲ *Author:* ${citel.pushName} 🔖
+✪ *الرساله :* ${text ? text : "اعيدت"}\n\n
+✪ *الطالب:* ${citel.pushName} 🔖
 `
         for (let mem of participants) {
             textt += `📍 @${mem.id.split("@")[0]}\n`;
@@ -554,7 +554,7 @@ cmd({
     )
     //---------------------------------------------------------------------------
 cmd({
-            pattern: "promote",
+            pattern: "ترقيه",
             desc: "Provides admin role to replied/quoted user",
             category: "group",
             filename: __filename,
@@ -581,7 +581,7 @@ cmd({
     )
     //---------------------------------------------------------------------------
 cmd({
-            pattern: "kick",
+            pattern: "طرد",
             desc: "Kicks replied/quoted user from group.",
             category: "group",
             filename: __filename,
@@ -728,7 +728,7 @@ cmd({
     )
     //---------------------------------------------------------------------------
 cmd({
-            pattern: "add",
+            pattern: "اضافه",
             desc: "Add that person in group",
             fromMe: true,
             category: "group",
@@ -780,7 +780,7 @@ cmd({
     )
     //---------------------------------------------------------------------------
 cmd({
-        pattern: "demote",
+        pattern: "تنزيل",
         desc: "Demotes replied/quoted user from group",
         category: "group",
         filename: __filename,
@@ -873,7 +873,7 @@ cmd({
     )
     //---------------------------------------------------------------------------
 cmd({
-            pattern: "block",
+            pattern: "بلوك",
             desc: "blocks that person",
             fromMe: true,
             category: "owner",
