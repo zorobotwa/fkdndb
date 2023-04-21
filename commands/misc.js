@@ -147,7 +147,7 @@ async(Void, citel, text,{ isCreator }) => {
      )
      //---------------------------------------------------------------------------
  cmd({
-             pattern: "uptime",
+             pattern: "الوقت",
              alias: ["runtime"],
              desc: "Tells runtime/uptime of bot.",
              category: "misc",
@@ -155,7 +155,7 @@ async(Void, citel, text,{ isCreator }) => {
          },
          async(Void, citel, text) => {
              const upt = runtime(process.uptime())
-             citel.reply(`Uptime of ${tlang().title}: ${upt}`)
+             citel.reply(`الوقت ${tlang().title}: ${upt}`)
          }
      )
      //---------------------------------------------------------------------------
