@@ -10,7 +10,7 @@
   </a>
  
 ##
-.  ***عمل [`فورك`](https://github.com/Raizel-2023/RAIZEL_BOT/fork) تصوير الكود. `واتساب>المزيد>الاجهزه المرتبطه
+***عمل [`فورك`](https://github.com/Raizel-2023/RAIZEL_BOT/fork)***
 ##
  `ثم عمل سكان للباركود`
 <a href="https://replit.com/@Raizelbot/RAIZEL-BOT"><img src="https://repl.it/badge/github/quiec/whatsAlfa" width="200" />
