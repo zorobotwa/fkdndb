@@ -187,7 +187,7 @@ ${
     ? `@${winner.split("@")[0]} فاز/ت 🎖️`
     : isTie
     ? `تعادل ، احسنتما الاثنين 👏`
-    :n\`دورك ${["❌", "⭕"][1 * room.game._currentTurn]} @${
+    :`دورك ${["❌", "⭕"][1 * room.game._currentTurn]} @${
         room.game.currentTurn.split("@")[0]
       }`
 }
