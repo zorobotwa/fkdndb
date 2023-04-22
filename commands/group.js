@@ -99,7 +99,7 @@ cmd({
 
 //---------------------------------------------------------------------------
 cmd({
-            pattern: "انذار",
+            pattern: "warn",
             desc: "Warns user in Group.",
             category: "group",
             filename: __filename,
