@@ -15,8 +15,8 @@
 
 ### `—◉ 💟 قروب الدعم 💟`
 
-<a href="https://chat.whatsapp.com/EZe0MlgU0xo8GXtkCpqS0M" target="blank"><img src="https://img.shields.io/badge/GRUPO_DE_SOPORTE_(ar)-25D366?style=for-the-badge&logo=whatsapp&logoColor=white" /></a>
-<a href="https://chat.whatsapp.com/EZe0MlgU0xo8GXtkCpqS0M" target="blank"><img src="https://img.shields.io/badge/SUPPORT_GROUP_(ar)-25D366?style=for-the-badge&logo=whatsapp&logoColor=white" /></a>
+<a href="https://chat.whatsapp.com/EZe0MlgU0xo8GXtkCpqS0M" target="blank"><img src="https://img.shields.io/badge/𝐑𝐀𝐈𝐙𝐄𝐋_𝐒𝐔𝐏𝐏𝐎𝐑𝐓(عربي)-25D366?style=for-the-badge&logo=whatsapp&logoColor=white" /></a>
+<a href="https://chat.whatsapp.com/EZe0MlgU0xo8GXtkCpqS0M" target="blank"><img src="https://img.shields.io/badge/𝐑𝐀𝐈𝐙𝐄𝐋_𝐆𝐇𝐀𝐓(عربي)-25D366?style=for-the-badge&logo=whatsapp&logoColor=white" /></a>
 
 ##
 ***عمل [`فورك`](https://github.com/Raizel-2023/RAIZEL_BOT/fork)***
