@@ -9,6 +9,15 @@
     <h1 align="center"> RAIZELBOT-MD </h1>
   </a>
  
+### `—◉ 🤖 رقم المطور 🤖`
+
+<a href="https://api.whatsapp.com/send/?phone=967770500831&text=/estado&type=phone_number&app_absent=0" target="blank"><img src="https://img.shields.io/badge/BOT_OFICIAL_1-25D366?style=for-the-badge&logo=whatsapp&logoColor=white" />
+
+### `—◉ 💟 قروب الدعم 💟`
+
+<a href="https://chat.whatsapp.com/EZe0MlgU0xo8GXtkCpqS0M" target="blank"><img src="https://img.shields.io/badge/GRUPO_DE_SOPORTE_(ar)-25D366?style=for-the-badge&logo=whatsapp&logoColor=white" /></a>
+<a href="https://chat.whatsapp.com/EZe0MlgU0xo8GXtkCpqS0M" target="blank"><img src="https://img.shields.io/badge/SUPPORT_GROUP_(ar)-25D366?style=for-the-badge&logo=whatsapp&logoColor=white" /></a>
+
 ##
 ***عمل [`فورك`](https://github.com/Raizel-2023/RAIZEL_BOT/fork)***
 ##
