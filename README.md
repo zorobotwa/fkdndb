@@ -9,11 +9,14 @@
     <h1 align="center"> RAIZELBOT-MD </h1>
   </a>
  
+##
+.  ***عمل [`فورك`](https://github.com/Raizel-2023/RAIZEL_BOT/fork)*** تصوير الكود. `واتساب>المزيد>الاجهزه المرتبطه
+ `ثم عمل سكان للباركود`
+<a href="https://replit.com/@Raizelbot/RAIZEL-BOT"><img src="https://repl.it/badge/github/quiec/whatsAlfa" width="200" />
+</a>
+#### بعد تصوير الباركود قم برفع الملف علي الاسكريبت وقم بالضغط علي زر التنصيب علي هيروكو`
 
----
-1. ***عمل [سكانـQr](https://replit.com/@SuhailTechInfo/Secktor-Md?v=1) | [`SESSION-ID`](https://secktoruserbot.onrender.com/) تصوير الكود. `واتساب>المزيد>الاجهزه المرتبطه`***
-2.  ***عمل [`فورك`](https://github.com/Raizel-2023/RAIZEL_BOT/fork)***
-3.  ***التنصيب [`على هيريكو`]( https://dashboard.heroku.com/new?template=https://github.com/Raizel-2023/RAIZEL_BOT)***
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://dashboard.heroku.com/new?template=https://github.com/Raizel-2023/RAIZEL_BOT)
 ##
 
 
