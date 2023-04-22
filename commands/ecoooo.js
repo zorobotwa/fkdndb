@@ -72,7 +72,7 @@ str+= `ـ *${i+1}* \n╮─────────────ـ\n│ *⧉ - ا
          const secktor = "secktor"
          const balance = await eco.balance(citel.sender, secktor); //Returns wallet, bank, and bankCapacity. Also creates a USer if it doesn't exist.
          return await citel.reply(`⊹⊱≼━━━⌬〔💠〕⌬━━━≽⊰⊹
-↫ ⟦ دايمون ايديث 🏦 ⟧
+↫ ⟦ بنك دايمون 🏦 ⟧
              
 ֎ ╎رصـيـدك 💰 ⟦ ${balance.wallet} بيلي ⟧
              
