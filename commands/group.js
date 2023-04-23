@@ -91,7 +91,7 @@ cmd({
         citel.reply(`*❀╎رسلت لك للــخاص ${tlang().greet}*`);
         await Void.sendMessage(`${citel.sender}`, {
             image: log0,
-            caption: `*جروب دعم بوت زيزو تو*\n*الرابط:* https://chat.whatsapp.com/LAASmxox5c75HILkYXe2AX`,
+            caption: `*جروب دعم بوت زيرو تو*\n*الرابط:* https://chat.whatsapp.com/LAASmxox5c75HILkYXe2AX `,
         });
 
     }
@@ -299,7 +299,7 @@ cmd({
             const lvpoints = userq.level;
             var role = "ملك✨";
             if (lvpoints <= 2) {
-                var role = "🏳حيوان منوي 🗿";
+                var role = "🏳حيوان منوي";
             } else if (lvpoints <= 4) {
                 var role = "👼طفل";
             } else if (lvpoints <= 6) {
@@ -407,19 +407,19 @@ cmd({
         async(Void, citel, text) => {
             const userq = await Levels.fetch(citel.sender, "RandomXP");
             const lvpoints = userq.level;
-           var role = "ملك✨";
+            var role = "GOD✨";
             if (lvpoints <= 2) {
-                var role = "🏳حيوان منوي 🗿";
+                var role = "🏳Citizen";
             } else if (lvpoints <= 4) {
-                var role = "👼طفل";
+                var role = "👼Baby Wizard";
             } else if (lvpoints <= 6) {
-                var role = "🧙‍♀️ساحر";
+                var role = "🧙‍♀️Wizard";
             } else if (lvpoints <= 8) {
-                var role = "🧙‍♂️كبير السحره";
+                var role = "🧙‍♂️Wizard Lord";
             } else if (lvpoints <= 10) {
-                var role = "🧚🏻كاهن";
+                var role = "🧚🏻Baby Mage";
             } else if (lvpoints <= 12) {
-                var role = "🧜عظيم";
+                var role = "🧜Mage";
             } else if (lvpoints <= 14) {
                 var role = "🧜‍♂️Master of Mage";
             } else if (lvpoints <= 16) {
@@ -494,19 +494,19 @@ cmd({
 \n\n`
             for (let i = 0; i < fetchlb.length; i++) {
                 const lvpoints = fetchlb[i].level
-                    var role = "ملك✨";
-            if (lvpoints <= 2) {
-                var role = "🏳حيوان منوي 🗿";
-            } else if (lvpoints <= 4) {
-                var role = "👼طفل";
-            } else if (lvpoints <= 6) {
-                var role = "🧙‍♀️ساحر";
-            } else if (lvpoints <= 8) {
-                var role = "🧙‍♂️كبير السحره";
-            } else if (lvpoints <= 10) {
-                var role = "🧚🏻كاهن";
-            } else if (lvpoints <= 12) {
-                var role = "🧜عظيم";
+                var role = "GOD✨";
+                if (lvpoints <= 2) {
+                    var role = "🏳Citizen";
+                } else if (lvpoints <= 4) {
+                    var role = "👼Baby Wizard";
+                } else if (lvpoints <= 6) {
+                    var role = "🧙‍♀️Wizard";
+                } else if (lvpoints <= 8) {
+                    var role = "🧙‍♂️Wizard Lord";
+                } else if (lvpoints <= 10) {
+                    var role = "🧚🏻Baby Mage";
+                } else if (lvpoints <= 12) {
+                    var role = "🧜Mage";
                 } else if (lvpoints <= 14) {
                     var role = "🧜‍♂️Master of Mage";
                 } else if (lvpoints <= 16) {
@@ -950,19 +950,17 @@ cmd({ on: "text" }, async(Void, citel) => {
         const lvpoints = sck1.level;
         var role = "GOD";
         if (lvpoints <= 2) {
-                var role = "ملك✨";
-            if (lvpoints <= 2) {
-                var role = "🏳حيوان منوي 🗿";
-            } else if (lvpoints <= 4) {
-                var role = "👼طفل";
-            } else if (lvpoints <= 6) {
-                var role = "🧙‍♀️ساحر";
-            } else if (lvpoints <= 8) {
-                var role = "🧙‍♂️كبير السحره";
-            } else if (lvpoints <= 10) {
-                var role = "🧚🏻كاهن";
-            } else if (lvpoints <= 12) {
-                var role = "🧜عظيم";
+            var role = "🏳Citizen";
+        } else if (lvpoints <= 4) {
+            var role = "👼Baby Wizard";
+        } else if (lvpoints <= 6) {
+            var role = "🧙‍♀️Wizard";
+        } else if (lvpoints <= 8) {
+            var role = "🧙‍♂️Wizard Lord";
+        } else if (lvpoints <= 10) {
+            var role = "🧚🏻Baby Mage";
+        } else if (lvpoints <= 12) {
+            var role = "🧜Mage";
         } else if (lvpoints <= 14) {
             var role = "🧜‍♂️Master of Mage";
         } else if (lvpoints <= 16) {
