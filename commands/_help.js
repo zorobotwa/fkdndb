@@ -20,10 +20,10 @@ const Secktor = require('../lib/commands')
     //---------------------------------------------------------------------------
 Secktor.cmd({
             pattern: "help",
-            alias: ["menu", "الاوامر", "منيو"],
+            alias: ["menu", "اوامر", "الاوامر"],
             desc: "Help list",
             category: "general",
-            react: "👀",
+            react: "🐥",
             filename: __filename
         },
         async(Void, citel, text) => {
@@ -102,8 +102,8 @@ Secktor.cmd({
 *┇↜⟬ لتشغيل الترحيب ⟭*
 ❀╎.التوديع
 *┇↜⟬ اتشغيل التوديع ⟭*
-❀╎
-*┇↜⟬ للعب اكس او ⟭*
+❀╎.الدعم
+*┇↜⟬ يعطيك الدعم ⟭*
 ✯──｢التسليه｣───✯
 ❀╎.نرد
 *┇↜⟬ رمي النرد ⟭*
@@ -136,8 +136,7 @@ Secktor.cmd({
 *┇↜⟬ اخذ مال من الاعضاء ⟭*
 ❀╎.اموالي
 *┇↜⟬ معرفة مقدار مالك ⟭*
-*⺀───النهايه───⺀*
-`
+*⺀───النهايه───⺀*`
 
                 let buttonMessaged = {
                     image: { url: await botpic() },
@@ -152,14 +151,16 @@ Secktor.cmd({
     )
     //---------------------------------------------------------------------------
 Secktor.cmd({
-            pattern: "اوامر",
+            pattern: "الدعم",
             desc: "list menu",
             category: "general",
             react: "🥀"
         },
         async(Void, citel) => {
             const { commands } = require('../lib');
-            let str = `["git", "sc", "script"]
+            let str = `
+╭━━〘 ` +fancytext('SUHAIL-MD', 58)+ ` 〙━━──⊷`
+            str += '' + `*⺀دعم قروب زيرو تو نورتونا⺀* \n* https://chat.whatsapp.com/LAASmxox5c75HILkYXe2AX *`
             return Void.sendMessage(citel.chat, { image: { url: THUMB_IMAGE }, caption: str ,footer: tlang().footer, headerType: 4 })
         }
     )
