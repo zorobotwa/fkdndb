@@ -86,7 +86,7 @@ cmd({
 )
 //---------------------------------------------------------------------------
 cmd({
-        pattern: "الاوامر",
+        pattern: "بوت",
         alias: ["about"],
         desc: "To check bot status",
         category: "general",
