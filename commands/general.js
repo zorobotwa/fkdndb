@@ -96,7 +96,7 @@ cmd({
         const uptime = process.uptime();
         timestampe = speed();
         latensie = speed() - timestampe;
-        let ter = `*⺀اوامر بوت رايزل⺀*
+        let ter = `*⺀اوامر بوت زيرو رو⺀*
 ❀╎.بروفايل
 *┇↜⟬ يجيبلك تفاصيلك ⟭*
 ❀╎.رانك
@@ -136,7 +136,7 @@ cmd({
 ❀╎.اختصار
 *┇↜⟬ يختصر رابطك ⟭*
 ✯───｢الدعم｣────✯
-｢  https://chat.whatsapp.com/EZe0MlgU0xo8GXtkCpqS0M  ｣
+｢  https://chat.whatsapp.com/LAASmxox5c75HILkYXe2AX  ｣
 ✯──｢منوعات｣───✯
 ❀╎.تطقيم
 *┇↜⟬ يجلبلك تطقيمات ⟭*
