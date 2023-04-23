@@ -24,14 +24,12 @@
 
 `ثم عمل سكان للباركود`
 
-<a href="https://replit.com/@Raizelbot/RAIZEL-BOT"><img src="https://repl.it/badge/github/quiec/whatsAlfa" width="200" />
+<a href="https://replit.com/@48x4qn4tv2/ZEROTWO-Md?v=1"><img src="https://repl.it/badge/github/quiec/whatsAlfa" width="200" />
 </a>
 #### بعد تصوير الباركود قم برفع الملف علي الاسكريبت وقم بالضغط علي زر التنصيب علي هيروكو`
 
-[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://dashboard.heroku.com/new?template=https://github.com/Raizel-2023/RAIZEL_BOT)
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://dashboard.heroku.com/new?template=https://github.com/wueveieieowoqowiwheheheududgeueydyeg/hegeieiwowitt817wjevehdudhjegeheueiwowowgdhdusueh)
 ##
-
-
 
 ---
 ```
