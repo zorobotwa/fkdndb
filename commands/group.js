@@ -28,7 +28,7 @@ cmd({
                 citel.reply("Link Invalid, Please Send a valid whatsapp Group Link!");
             let result = text.split(" ")[0].split("https://chat.whatsapp.com/")[1];
             await Void.groupAcceptInvite(result)
-                .then((res) => citel.reply("🟩Joined Group"))
+                .then((res) => citel.reply("🟩تم دخلت"))
                 .catch((err) => citel.reply("Error in Joining Group"));
 
         }
@@ -459,11 +459,11 @@ cmd({
             }
             let disc = citel.sender.substring(3, 7);
             let textr = '';
-            textr += `*Hii ${tlang().greet} ,🌟 ${citel.pushName}∆${disc}'s* Exp\n\n`;
+            textr += `*هلا ${citel.pushName}`;
             let ttms = `${userq.xp}` / 8;
-            textr += `*🌟Role*: ${role}\n*🟢Exp*: ${userq.xp} / ${Levels.xpFor(
+            textr += `*⚡البايو:* ${bioo}\n*🟢يكسب*: ${userq.xp} / ${Levels.xpFor(
     userq.level + 1
-  )}\n*🏡Level*: ${userq.level}\n*Total Messages:*- ${ttms}`;
+  )}\n*🏡المستوى*: ${userq.level}\n*عدد الرسائل:*- ${ttms}`;
             try {
                 ppuser = await Void.profilePictureUrl(citel.sender, "image");
             } catch {
