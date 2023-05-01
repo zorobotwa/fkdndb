@@ -4,7 +4,7 @@
 
  
   <p align="center">  
-  <a href="https://j.top4top.io/p_267169zah0.jpeg">
+  <a href="https://ibb.co/nCMwbBH">
     <img alt="secktor docs" height="300" src="https://j.top4top.io/p_267169zah0.jpeg">
     <h1 align="center"> ZORO-MD </h1>
   </a>
@@ -24,7 +24,7 @@
 
 `ثم عمل سكان للباركود`
 
-<a href="https://replit.com/@48x4qn4tv2/ZEROTWO-Md?v=1"><img src="https://repl.it/badge/github/quiec/whatsAlfa" width="200" />
+<a href="https://replit.com/@zorobot/zoro-bot-Md-1?v=1"><img src="https://repl.it/badge/github/quiec/whatsAlfa" width="200" />
 </a>
 #### بعد تصوير الباركود قم برفع الملف علي الاسكريبت وقم بالضغط علي زر التنصيب علي هيروكو`
 
